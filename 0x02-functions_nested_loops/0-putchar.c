@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- * main - prints out _putchar
- * Return: All good
+ * main - prints _putchar, fllowd by a new linees
+ * Return: Alwys 0 (Success)
  */
 int main(void)
 {
-	char *s = "_putchar"; /*arrays of characters or strings*/
-	int i = 0;
+	char abe[] = "_putchar";
 
-	while (s[i] != '\0')
+	int c;
+
+	for (c = 0; c < 8; c++)
 	{
-		_putchar(s[i]);
-		i++;
+		_putchar(abe[c]);
 	}
 	_putchar('\n');
-
 	return (0);
 }
